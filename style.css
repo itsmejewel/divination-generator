@@ -1,0 +1,227 @@
+body {
+    /* background-image: url('./images/Honor\ Your\ Intuition.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background: hsla(297, 31%, 89%, 1);
+
+    background: linear-gradient(135deg, hsla(297, 31%, 89%, 1) 0%, hsla(15, 75%, 91%, 1) 100%);
+
+    background: -moz-linear-gradient(135deg, hsla(297, 31%, 89%, 1) 0%, hsla(15, 75%, 91%, 1) 100%);
+
+    background: -webkit-linear-gradient(135deg, hsla(297, 31%, 89%, 1) 0%, hsla(15, 75%, 91%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#EAD9EB", endColorstr="#F9DED5", GradientType=1);
+}
+
+
+.container-tarot {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+
+}
+
+@media (max-width: 768px) {
+    .container-tarot {
+        width: 100%;
+        height: 60vh;
+    }
+}
+
+.cards {
+    /* border: 1px solid; */
+    position: relative;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 20vw;
+    aspect-ratio: 3 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    padding: 0;
+    color: rgb(46, 46, 46);
+    /* box-shadow: 5px 5px 8px 2px rgb(39, 39, 39); */
+    /* background-color: transparent; */
+
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+}
+
+.cards.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+}
+
+.cards-back {
+    background-image: url('https://www.usgamesinc.com/images/product/BSW84_card_back.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 20vw;
+    aspect-ratio: 3 / 5;
+    border-radius: 15px;
+
+}
+
+
+.cards-front {
+    transform: rotateY(180deg);
+    background-image: url('https://i.pinimg.com/564x/5e/2a/a8/5e2aa83c11ad8425436a64053f81caa0.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20vw;
+    aspect-ratio: 3 / 5;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+@media (max-width: 768px) {
+
+    .cards-back,
+    .cards-front {
+        width: 5vw;
+        aspect-ratio: 3 / 5;
+    }
+
+}
+
+@media (max-width: 912px) {
+
+    .cards-back,
+    .cards-front {
+        width: 50vw;
+        aspect-ratio: 3 / 5;
+    }
+
+}
+
+.cards-front>h1,
+p {
+    color: white;
+}
+
+.cards-front>p {
+    font-size: 1rem;
+}
+
+.cards-front>h1 {
+    font-size: 2rem;
+}
+
+
+@media (max-width: 480px) {
+    .cards-front>p {
+        font-size: 0.8rem;
+    }
+
+    .cards-front>h1 {
+        font-size: 1.3rem;
+    }
+
+}
+
+.card_face {
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+section {
+    /* border: 1px solid white; */
+    border-radius: 15px;
+    width: 20vw;
+    aspect-ratio: 3 / 5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#card {
+    width: 15vw;
+    height: auto;
+}
+
+#meaning {
+    width: 15vw;
+    height: auto;
+}
+
+@media (max-width: 786px) {
+    #card {
+        width: 20vw;
+        height: auto;
+    }
+
+    #meaning {
+        width: 25vw;
+        height: auto;
+    }
+}
+
+
+.btn {
+    border-radius: 50px;
+    height: 8vh;
+    aspect-ratio: 7 / 3;
+}
+
+.logo {
+    height: 23vh;
+    width: auto;
+}
+
+.guidance-scroll {
+    height: 10vh;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .guidance-scroll {
+        height: 5vh;
+        width: auto;
+    }
+}
+
+.divination-heading {
+    font-size: 10vw;
+    font-family: 'Antonio', sans-serif;
+    color: #1A3C40;
+}
+
+.reg-p {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 2vh;
+}
+
+a {
+    text-decoration: none;
+    color: #78673c;
+}
+
+a :active {
+    color: #78673c;
+}
+
+a :hover {
+    color: #4d3e1a;
+    font-style: italic;
+}
+
+a :visited {
+    color: #78673c;
+}
+
+.copyright-text {
+    color: darkslategrey;
+}
